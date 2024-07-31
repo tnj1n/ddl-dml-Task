@@ -1,0 +1,43 @@
+{
+	"folders": {},
+	"connections": {
+		"oracle_thin-190fc905f96-2328c61e000df1e8": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "localhost",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "XE",
+				"url": "jdbc:oracle:thin:@//localhost:1521/XE",
+				"configurationType": "MANUAL",
+				"home": "C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native"
+			}
+		}
+	},
+	"virtual-models": {"oracle_thin-190fc905f96-2328c61e000df1e8":{"SCOTT":{"@properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202407310622\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"oracle_thin-190fc905f96-2328c61e000df1e8\"\u003e\u003centity id\u003d\"1\" name\u003d\"BONUS\" fq-name\u003d\"SCOTT.BONUS\" order\u003d\"0\" font\u003d\"Segoe UI:9:0\" x\u003d\"295\" y\u003d\"675\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"DEPT\" fq-name\u003d\"SCOTT.DEPT\" order\u003d\"1\" font\u003d\"Segoe UI:9:0\" x\u003d\"295\" y\u003d\"447\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"EMP\" fq-name\u003d\"SCOTT.EMP\" order\u003d\"2\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"387\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"TBL_MEMBER\" fq-name\u003d\"SCOTT.TBL_MEMBER\" order\u003d\"3\" font\u003d\"Segoe UI:9:0\" x\u003d\"652\" y\u003d\"20\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"TBL_ORDER\" fq-name\u003d\"SCOTT.TBL_ORDER\" order\u003d\"4\" font\u003d\"Segoe UI:9:0\" x\u003d\"10\" y\u003d\"25\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"TBL_ORDER_ITEM\" fq-name\u003d\"SCOTT.TBL_ORDER_ITEM\" order\u003d\"5\" border-width\u003d\"3\" font\u003d\"Segoe UI:9:0\" x\u003d\"350\" y\u003d\"154\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"TBL_PRODUCT\" fq-name\u003d\"SCOTT.TBL_PRODUCT\" order\u003d\"6\" font\u003d\"Segoe UI:9:0\" x\u003d\"21\" y\u003d\"170\"\u003e\u003cpath name\u003d\"SCOTT\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"FK_DEPTNO\" fq-name\u003d\"SCOTT.EMP.FK_DEPTNO\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"3\"/\u003e\u003crelation name\u003d\"FK_MEMBER_ORDER\" fq-name\u003d\"SCOTT.TBL_ORDER.FK_MEMBER_ORDER\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"5\"/\u003e\u003crelation name\u003d\"FK_ORDER_ORDER\" fq-name\u003d\"SCOTT.TBL_ORDER_ITEM.FK_ORDER_ORDER\" type\u003d\"fk\" pk-ref\u003d\"5\" fk-ref\u003d\"6\"/\u003e\u003crelation name\u003d\"FK_ORDER_PRODUCT\" fq-name\u003d\"SCOTT.TBL_ORDER_ITEM.FK_ORDER_PRODUCT\" type\u003d\"fk\" pk-ref\u003d\"7\" fk-ref\u003d\"6\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}}},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
